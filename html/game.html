@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 2048</title>
+    <link rel="stylesheet" href="../style/game.css">
+</head>
+
+<body>
+    <h1 id="title"> 2048 </h1>
+    <div id="container">
+        <div id="pageHead">
+            <div id="score">score: </div>
+            <div id="timer">0:0:0</div>
+        </div>
+
+        <div id="over" class="board">
+            Game over!
+            <br>
+            <a id="again" href="">try again</a>
+        </div>
+        <div id="win" class="board">
+            You win!
+            <br><br><br>
+            <a id="again" href="">play again</a>
+            <br>
+            <a id="continue" href="">continue</a>
+        </div>
+        <div class="board" id="play">
+        </div>
+    </div>
+    <audio src="../music/BRAVO.WAV"></audio>
+    <script src="../js/parameters.js"></script>
+    <script src="../js/fillJson.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/moves.js"></script>
+
+</body>
+
+</html>

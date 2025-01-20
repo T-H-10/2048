@@ -1,0 +1,281 @@
+:root {
+    font-size: 1px;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #faf8ef;
+    color: #776e65;
+    font-size: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 90rem;
+    font-weight: bold;
+}
+
+.board {
+    height: 600rem;
+    width: 600rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin-bottom: 15rem;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.col {
+    margin-right: 15rem;
+    border-radius: 3rem;
+    background: rgba(238, 228, 218, 0.35);
+    font-size: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#score,
+#timer {
+    position: fixed;
+    right: 20vw;
+    height: 40rem;
+    padding: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20rem;
+    font-weight: bolder;
+    background-color: #7971696b;
+    border-radius: 3rem;
+    width: 95rem;
+}
+
+#score {
+    top: 20rem;
+}
+
+#timer {
+    top: 100rem;
+}
+
+/*respnsive board*/
+@media(max-width: 1050px) {
+
+    #score,
+    #timer {
+        right: 4vw;
+        width: 80rem;
+        height: 35rem;
+        padding: 10rem;
+        font-size: 18rem;
+    }
+}
+
+@media(max-width: 900px) {
+
+    #score,
+    #timer {
+        right: 6vw;
+        width: 80rem;
+        height: 35rem;
+        padding: 10rem;
+        font-size: 18rem;
+    }
+}
+
+@media(max-width: 800px) {
+
+    #score,
+    #timer {
+        right: 6vw;
+        width: 80rem;
+        height: 35rem;
+        padding: 10rem;
+        font-size: 18rem;
+    }
+}
+
+@media(max-width: 700px) {
+
+    #score,
+    #timer {
+        right: 6vw;
+        width: 75rem;
+        height: 30rem;
+        padding: 10rem;
+        font-size: 18rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .board {
+        height: 500rem;
+        width: 500rem;
+    }
+
+    #title {
+        font-size: 85rem;
+        font-weight: bold;
+    }
+
+    .col {
+        font-size: 45rem;
+    }
+
+    #score,
+    #timer {
+        right: 6vw;
+        width: 75rem;
+        height: 30rem;
+        padding: 10rem;
+        font-size: 18rem;
+        /* display: flex;
+        align-items: center; */
+    }
+
+    #score {
+        top: 80rem;
+    }
+
+    #timer {
+        top: 140rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .board {
+        height: 400rem;
+        width: 400rem;
+    }
+
+    #title {
+        font-size: 75rem;
+        font-weight: bold;
+    }
+
+    .col {
+        font-size: 40rem;
+    }
+
+    #score,
+    #timer {
+        right: 4vw;
+        width: 65rem;
+        height: 25rem;
+        padding: 8rem;
+        font-size: 14rem;
+    }
+
+    #score {
+        top: 80rem;
+    }
+
+    #timer {
+        top: 140rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .board {
+        height: 350rem;
+        width: 350rem;
+    }
+
+    #title {
+        font-size: 70rem;
+        font-weight: bold;
+    }
+
+    .col {
+        font-size: 30rem;
+    }
+
+    #score {
+        display: none;
+    }
+
+    #timer {
+        display: none;
+    }
+}
+
+@media(max-width: 400px) {
+    .board {
+        height: 300rem;
+        width: 300rem;
+    }
+
+    #title {
+        font-size: 70rem;
+        font-weight: bold;
+    }
+
+    .col {
+        font-size: 25rem;
+    }
+
+}
+
+/*game-over style:*/
+#over,
+#win {
+    display: none;
+    position: absolute;
+    background: rgba(238, 228, 218, 0.7);
+    z-index: 100;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50rem;
+    font-weight: bolder;
+}
+
+#again,
+#continue{
+    padding: 15rem;
+    background-color: #bbada0;
+    border-radius: 3%;
+    font-weight: bold;
+    color: white;
+    font-size: 35rem;
+    text-decoration: none;
+
+}
+
+#play {
+    border-radius: 6rem;
+    padding: 15rem;
+    padding-left: 20rem;
+    background-color: #bbada0;
+    box-sizing: border-box;
+}
+
+
+
+/*animations*/
+@keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}

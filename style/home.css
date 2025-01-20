@@ -1,0 +1,82 @@
+:root{
+    font-size: 1px;
+}
+body{
+    background-image:url(../images/smokeWHITE.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mask{
+   
+    background: rgba(255, 255, 255,0.25);
+    height: 95vh;
+    margin: 15rem;
+}
+#name,#btn{
+    position: fixed;
+    right: 20vw;
+    height: 70rem;
+    width: 50vw;
+    font-size:x-large;
+    box-sizing: content-box;
+}
+#name{
+    padding-left: 10rem;
+    background-color: #fefbf7ed;
+}
+#name{
+    top: 40%;
+}
+#btn{
+    top: 50%;
+    background-color: #f0c79db5;
+}
+#btnsavedData{
+    position: fixed;
+    bottom: 50rem;
+    right: 50rem;
+    height: 50rem;
+    width: 50rem;
+    color: black;
+    font-size: 30rem;
+    border: double;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+#details{
+    font-size: 25rem;
+    position: fixed;
+    bottom: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200rem;
+    overflow-y: scroll;
+}
+#sizeFour,#sizeFive,#sizeSix{
+    font-size:6vw;
+    background-color: #fbd5d8fa;
+    position: fixed;
+    top: 20%;
+    padding: 15rem;
+    font-weight: bold;
+    border-radius: 5%;
+    width: 11vw;
+}
+#sizeFour{
+    right: 58vw;
+}
+#sizeFive{
+    right: 39vw;
+}
+#sizeSix{
+    right:20vw;
+}
+
+.currentSize{
+    border:  1rem solid black;
+}
+
